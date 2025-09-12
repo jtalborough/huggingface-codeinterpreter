@@ -1,6 +1,40 @@
-based on the graet work by Erick Santana https://ersantana.com/tools/librechat/implementing_custom_code_interpreter_hf
-
-
+---
+title: LibreChat Code Interpreter
+emoji: 🐍
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 4.0.0
+app_file: app.py
+pinned: false
+license: mit
+private: true
+---
+ 
+# LibreChat Code Interpreter
+ 
+A secure code execution environment for LibreChat using MCP (Model Context Protocol). Based on the graet work by Erick Santana https://ersantana.com/tools/librechat/implementing_custom_code_interpreter_hf
+ 
+## Features
+ 
+- Execute Python, JavaScript, and Bash code safely
+- Matplotlib visualization support
+- Session management for persistent context
+- Security restrictions and sandboxing
+- SSE integration with LibreChat
+ 
+## Security
+ 
+This space implements multiple security measures:
+- Code analysis for dangerous patterns
+- Execution timeouts (30 seconds)
+- Output length limits
+- Blocked dangerous imports and commands
+- Isolated execution environment
+ 
+## Usage
+ 
+This space is designed to work with LibreChat's MCP integration. Configure your LibreChat instance to connect via SSE.
 
 ```
 version: 1.2.4
